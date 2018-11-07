@@ -1,0 +1,43 @@
+
+/* Universal Styles */
+
+body {
+  margin: 0;
+  font-family: "georgia", serif;
+  font-size: 17px;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+header {
+  height: 64px;
+  align-items: center;
+}
+
+.logo span {
+  align-items: center;
+}
+
+nav span {
+  display: inline-block;
+  padding: 24px, 16px;
+}
+
+nav {
+  text-align: right;
+}
+
+.truncated-menu {
+  display: none
+}
