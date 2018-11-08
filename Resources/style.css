@@ -103,6 +103,8 @@ nav {
 
 /* Banner */
 
+
+
 .side-text {
   display: inline-flex;
   flex-flow: column;
@@ -113,14 +115,17 @@ nav {
 .banner img {
   display: inline-block;
   vertical-align: middle;
-  width: 65%;
-  flex-shrink: 0;
+  width: 60%;
   margin: 2rem 1.5rem;
 }
 
 .banner .side-text {
   width: 25%;
   box-sizing: border-box;
+}
+
+.banner h1,h3 {
+  padding: 0.25rem;
 }
 
 .start {
@@ -131,4 +136,75 @@ nav {
   padding: 1rem 0;
   text-align: center;
   font-weight: bold;
+}
+
+.start:hover {
+  background-color: lime;
+  color: black;
+}
+
+/*info*/
+
+
+
+.multi-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.main-pic-box {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+
+
+.main-pic-box img, video {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.main-pic-box h2 {
+  padding: 0 0 1.5rem 0;
+}
+
+#mobile-pic {
+  display: none;
+}
+
+.main-pic-box h2 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-family: "roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.main-pic-box p {
+  font-family: "karla", sans-serif;
+  font-size: 1.5rem;
+}
+
+.stacked-pic {
+  display: flex;
+  flex-flow: column;
+  width: 35%;
+  margin-top: 2rem;
+}
+
+.content img {
+  width: 35%
+  margin: 3.5%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.content .text-side {
+  width: 65%;
+}
+
+.content-box a {
+  color: darkgray;
+  padding: 0;
 }
