@@ -3,14 +3,15 @@
 html {
   font-family: "rubik", sans-serif;
   font-size: 16px;
-  color: #303030;
+  color: black;
 }
 
 main {
   font-family: "rubik", sans-serif;
   position: relative;
   top: 4rem;
-  color: #303030;
+  color: black;
+  border-radius: solid, lightgray, 1px;
 }
 
 section {
@@ -24,9 +25,14 @@ section:nth-child(2n+1) {
 a {
   font-family: "rubik", sans-serif;
   text-decoration: none;
-  color: #303030;
+  color: black;
   font-size: 1.25rem;
   padding-left: 1rem;
+  transition:color 750ms, background-color 750ms;
+}
+
+a:hover {
+  color: red;
 }
 
 h1 {
@@ -36,11 +42,30 @@ h1 {
   line-height: 1;
 }
 
+h2 {
+  font-family: "robot", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
 h3 {
   font-family: "roboto", sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 1.2;
+}
+
+p {
+  font-family: "karla", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+h5, footer span {
+  font-size: 0.8rem;
+  color: #01161E;
 }
 
 /* Header */
@@ -120,7 +145,7 @@ nav {
 }
 
 .banner .side-text {
-  width: 25%;
+  width: 30%;
   box-sizing: border-box;
 }
 
@@ -136,6 +161,7 @@ nav {
   padding: 1rem 0;
   text-align: center;
   font-weight: bold;
+  transition: 750ms, background-color 375ms;
 }
 
 .start:hover {
@@ -143,9 +169,12 @@ nav {
   color: black;
 }
 
-/*info*/
+.information .content-box:last-child, .thesis .content-box:first-child {
+  background-color: lightgray;
+}
 
 
+/* Info */
 
 .multi-container {
   width: 100%;
@@ -157,8 +186,6 @@ nav {
   width: 60%;
   padding: 2rem 1.5rem;
 }
-
-
 
 .main-pic-box img, video {
   width: 100%;
@@ -172,39 +199,113 @@ nav {
 #mobile-pic {
   display: none;
 }
+/* Side boxes and text */
 
-.main-pic-box h2 {
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-  font-family: "roboto", sans-serif;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-.main-pic-box p {
-  font-family: "karla", sans-serif;
-  font-size: 1.5rem;
-}
-
-.stacked-pic {
+.stacked-content-box {
   display: flex;
   flex-flow: column;
+  vertical-align: top;
+  margin-top: 1rem;
   width: 35%;
-  margin-top: 2rem;
 }
 
-.content img {
-  width: 35%
+.content-box img {
+  width: 35%;
   margin: 3.5%;
   vertical-align: middle;
   display: inline-block;
 }
 
-.content .text-side {
-  width: 65%;
+.content-box .side-text {
+  width: 56%;
 }
 
 .content-box a {
-  color: darkgray;
+  color: Black;
   padding: 0;
+  transition-timing-function: ease-in-out;
+  transition:color 750ms;
+}
+
+.content-box a:hover {
+  color: red;
+}
+
+.thesis .main-pic-box {
+  padding: 1rem 1rem 1.5rem 1.5rem;
+}
+
+
+/* Courses Section */
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.course-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.course-box {
+  width: 30%;
+  height: auto;
+  margin: 0 0.5rem 1rem 0.5rem;
+  background-color: white;
+}
+
+.courses h2, .thesis h2 {
+  text-align: center;
+}
+
+.course-box img {
+  width:100%;
+}
+
+.course-text {
+  padding: 1rem 0 0 1rem;
+  margin: 1.5rem auto;
+}
+
+/* Footer Section*/
+
+footer {
+  background-color: white;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  top: 4rem;
+  width: 100%
+}
+
+footer h5 {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer nav {
+  align-self: auto;
+  padding-top: 1rem;
+}
+
+footer span {
+  padding-left: 1rem;
+}
+
+footer a {
+  transition-timing-function: ease-in-out;
+  transition:color 750ms;
+}
+
+footer a:hover {
+  color: red;
 }
