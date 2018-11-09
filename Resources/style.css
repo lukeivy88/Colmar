@@ -217,7 +217,7 @@ nav {
 }
 
 .content-box .side-text {
-  width: 56%;
+  width: 50%;
 }
 
 .content-box a {
@@ -308,4 +308,13 @@ footer a {
 
 footer a:hover {
   color: red;
+}
+
+/* Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+  .logo, .desktop, .title-bar, .main-pic-box, #pc-pic, .course-box img .course-box p, .thesis .stacked-content-box  {
+    display: none;
+  }
 }
